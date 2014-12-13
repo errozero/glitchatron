@@ -563,9 +563,6 @@
 
 		glitch: function(){
 
-			//Hide welcome text
-			document.getElementById("welcome_text").style.display = 'none';
-
 			//If a new file has been selected call loadImage, otherwise call glitchImage and use currently loaded image
 			if(glitchatron.file_changed){
 				glitchatron.loadImage();
