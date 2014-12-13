@@ -1,0 +1,176 @@
+html {
+height:100%;
+}
+body {
+color:#aaa !important;
+font-family:'Press Start 2P';
+font-family:sans-serif;
+font-size:14px;
+margin:0;
+padding:0;
+/*background-image:url('images/glitch_art_background.jpeg');*/
+background:#333 !important;
+}
+a{
+color:#666;
+text-decoration:none;
+}
+a:hover{
+color:#fff;
+text-decoration:none;
+}
+a:visited{
+color:#fff !important;
+}
+a:active{
+color:#fff !important;
+}
+h1 {
+margin:0;
+font-weight:bold;
+font-size:24px;
+padding:0 0px;
+}
+label{
+font-weight:bold;
+}
+.title {
+padding:16px 0;
+}
+h1 span {
+font-size:12px;
+color:yellow;
+}
+#menuBar {
+background:#111;
+padding:16px;
+}
+#file_content {
+height:74%;
+}
+#file {
+display:block;
+}
+.file_input_container{
+background:#333;
+
+padding:4px 2px;
+box-shadow:4px 4px 3px #000;
+overflow:hidden;
+}
+#glitched {
+margin-top:-1px;
+border-right:1px solid #666;
+border-bottom:1px solid #666;
+border-top:0px solid black;
+max-height:100%;
+max-width:78%;
+}
+#info_box {
+line-height:22px;
+width:18%;
+position:absolute;
+top:170px;
+right:0;
+background:#111;
+border:1px solid #666;
+padding:8px;
+color:#666;
+border-right:0;
+}
+
+.btn{
+	background:#222;
+	padding:8px;	
+	border-radius:0px;
+	box-shadow:4px 4px 3px #000;
+	cursor:pointer;
+	font-weight:bold;
+	border:0;
+	padding:8px;
+	color:#fff;
+	display:block;
+	text-align:center;
+}
+.block{
+	display:block;
+}
+.btn-inline {
+	display:inline-block;
+}
+
+.btn-glitch {
+background:#660033;
+}
+
+.btn-glitch:hover {
+background:#5C002E;
+}
+
+.btn-save {
+background:green;
+}
+
+.btn-save:hover {
+background:lime;
+}
+
+
+.select {
+margin-right:8px;
+padding:7px;
+background:#333;
+color:#fff;
+border:0px solid #333;	
+border-radius:0px;
+box-shadow:4px 4px 3px #000;
+display:block;
+width:100%;
+}
+
+.glitch_container{
+padding-top:16px;
+}
+
+.fullHeight{
+height:100%;
+}
+
+#saveButtonContainer{
+opacity:0;
+}
+
+::-webkit-input-placeholder {
+   color: #111;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #111;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000;  
+}
+
+:-ms-input-placeholder {  
+   color: red;  
+}
+
+#welcome_text{
+	max-width:400px;
+}
+
+.share_button {
+	padding-right:8px;
+	
+	margin-bottom:8px;
+	float:left;
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	#menuBar{
+		min-height:100%;
+	}
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap_grid.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>GLITCHATRON - Image Destroyer</title>
+	</head>
+
+	<body class="fullHeight">
+
+		<div class="container-fluid fullHeight">
+			<div class="row fullHeight">
+
+				<!--Title-->
+				<div class="col-sm-1 hidden-sm hidden-xs" style="">
+					<img src="images/glitchatron_logo.png" title="Glitch Art Generator" class="pull-right" style="margin-top:32px;">
+				</div>
+				
+				<div class="col-sm-2" id="menuBar">
+					
+					<label>File</label>
+					<div class="file_input_container">
+						<input type="file" id="files" name="file"/>
+					</div>
+
+					<br>
+
+					<div style="opacity:0;display:none;" id="options_container">
+					
+						<label>Glitch Level</label>
+						<select id="glitch_level" class="select">
+							<option value="0">Low</option>
+							<option value="1">Medium</option>
+							<option value="2" selected>High</option>
+							<option value="3">Extreme</option>
+							<option value="4">Destroyed</option>
+						</select>
+
+						<br>
+						
+						<label>Mask Shape</label>
+						<select id="mask_option" class="select">
+							<option value="">None</option>
+							<option value="circle">Circle</option>
+							<option value="triangle">Triangle</option>
+							<option value="triangle2">Triangle 2</option>
+						</select>
+
+						<br>
+
+						<label>Text Overlay</label>
+						<input type="text" class="select" id="text_overlay" maxlength="64" placeholder="Enter Some Text">
+
+						<br>
+
+						<div id="text_options_container" class="hide">
+
+							<label>Text Font Size</label>
+							<select id="text_font_size" class="select">
+								<option value="16">16</option>
+								<option value="32">32</option>
+								<option value="48">48</option>
+								<option value="64" selected>64</option>
+								<option value="80">80</option>
+								<option value="96">96</option>
+								<option value="112">112</option>
+							</select>
+
+							<br>
+
+							<label>Text Align</label>
+							<select id="text_align" class="select">
+								<option value="tl">Top Left</option>
+								<option value="tc">Top Centre</option>
+								<option value="tr">Top Right</option>
+								<option value="ml">Middle Left</option>
+								<option value="mc" selected>Middle Centre</option>
+								<option value="mr">Middle Right</option>
+								<option value="bl">Bottom Left</option>
+								<option value="bc">Bottom Centre</option>
+								<option value="br">Bottom Right</option>
+							</select>
+
+							<br>
+
+							<label>Text Colour</label>
+							<select id="text_colour" class="select">
+								<option value="white">White</option>
+								<option value="black">Black</option>
+							</select>
+
+							<br>
+
+						</div><!--End Text Options Container-->
+
+						<div>
+							<!--&#x25B2; &#x25BC; Arrows-->
+							<a href="#" id="more_text_options">&#x25BC; Text Options</a>
+						</div>
+
+						<br>
+						
+						<a href="#" id="glitchButton" class="btn btn-glitch">GLITCH</a>
+						<br>
+						<div id="saveButtonContainer">
+							<a href="#" id="saveButton" class="btn btn-save">SAVE</a>
+						</div>
+
+						<br>
+
+					</div><!--End options container-->
+
+					<div style="position:absolute;bottom:10px;">
+						<a href="http://www.errozero.co.uk" target="_blank">Developed By Errozero</a>
+					</div>
+						
+				</div>	
+			
+			
+				<div class="col-sm-10 col-md-9 glitch_container">
+						<canvas id="unglitched_canvas" style="display:none;"></canvas>
+						<canvas id="glitched_canvas"></canvas>
+				</div>
+
+			</div><!--End Row-->
+		</div><!--End Container-->
+		
+		
+		<script src="glitchatron.js"></script>
+	
+	</body>
+</html>
